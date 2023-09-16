@@ -542,7 +542,19 @@ p {
   position: absolute;
   left: -330px;
   top: 460px;
-  width: 500px;
+  width: 490px;
+  transition: all 0.5s ease;
+}
+
+.dup {
+  z-index: 20;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.dup:hover {
+  opacity: 1;
+  transition: all 0.5s ease;
 }
 
 .cont3 {
@@ -554,6 +566,20 @@ p {
 
 .model-details {
   font-size: 18px;
+}
+
+.note {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.note .note-cont p {
+  font-size: 18px;
+  color: gray;
+}
+.note .copyright p {
+  font-size: 18px;
+  color: gray;
 }
 
 .btn-view {
@@ -588,6 +614,44 @@ p {
 .join-us {
   text-align: center;
   padding: 10rem 0;
+}
+
+.dc-server-cont {
+  position: relative;
+  height: 500px;
+  padding: 5rem 0;
+}
+
+.sotf, .cop, .traphouse {
+  position: absolute;
+}
+
+.sotf {
+  left: 360px;
+}
+.sotf img {
+  width: 90%;
+  z-index: 1;
+}
+
+.cop {
+  top: 90px;
+  left: 30px;
+}
+.cop img {
+  width: 70%;
+}
+
+.traphouse {
+  top: 90px;
+  left: 700px;
+}
+.traphouse img {
+  width: 70%;
+}
+
+.dc-img {
+  border-radius: 50%;
 }
 
 /* page styles */
@@ -802,6 +866,18 @@ p {
   left: 550px;
   font-size: 96px;
   font-weight: 700;
+}
+
+.ty-cont {
+  position: absolute;
+  height: 433px;
+  width: 100%;
+  top: 0;
+}
+.ty-cont h1 {
+  text-align: center;
+  padding-top: 8rem;
+  font-size: 100px;
 }
 
 .marquee-text {
