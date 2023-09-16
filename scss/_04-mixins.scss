@@ -1,0 +1,54 @@
+@mixin centerAll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin centerSpaceBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin mediaQuery($width:48rem){
+    @media screen and (max-width: $width){
+        @content;
+    }
+}
+
+@mixin btn($bg){
+    padding: 1rem 2.5rem;
+    color: $clr-white;
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline-block;
+    transition: .3s ease;
+    border-radius: 5px;
+    background: $bg;
+    &:hover{
+        background: #ff4410;
+    }
+}
+
+@mixin btn1($bg){
+    padding: 0.7rem 1.5rem;
+    color: $clr-white;
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline-block;
+    transition: .3s ease;
+    border: 2px solid $clr-gray;
+    border-radius: 5px;
+    background: none;
+    &:hover{
+        border: 2px solid $clr-primary;
+        background: none;
+        color: $clr-white;
+    }
+}
+
+@mixin grid($cols: 1, $gap: 1rem){
+    display: grid;
+    grid-template-columns: repeat($cols, 1fr);
+    grid-gap: $gap;
+}

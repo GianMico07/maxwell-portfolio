@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;   
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 30%;
+    background-color: #1e1e1e;
+}
+
+body{
+    font-family: $ff-primary;
+    overflow-x: hidden;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+  }
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 140px;
+}
+
+h2{
+    font-size: 48px;
+    font-family: "Monument Extended Bold";
+}
+
+.my-main-game{
+    font-family: $ff-primary;
+}
+
+h3{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+h4{
+    font-size: 64px;
+    line-height: 64px;
+    margin: 1.5rem 0;
+}
+
+
+p{
+    font-size: 22px;
+}
